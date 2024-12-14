@@ -1,0 +1,22 @@
+Git $ cat example.txt
+Initial content
+Git $ echo "Some new content" >> example.txt
+Git $
+Git $ cat example.txt
+Initial content
+Some new content
+Git $ git add example.txt
+Git $ git commit -m "Added some new content"
+[master 74d0737] Added some new content
+ 1 file changed, 1 insertion(+)
+Git $
+
+
+Git $ git log --oneline
+b19d292 (HEAD -> master) Added additional content
+74d0737 Added some new content
+61e0d98 Initial commit
+
+
+Git $ cat example.txt
+Initial content       b19d292
